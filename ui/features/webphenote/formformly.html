@@ -1,0 +1,28 @@
+<div class="container container-fluid">
+  <div class="row">
+
+    <multi-step-container steps="formmultistep.templateSteps" class="simple-prev-next">
+        <header>
+            <button ng-disabled="$isFirst()" class="btn btn-default" ng-click="$previousStep()">
+                <span class="fa fa-chevron-left"></span>
+                Previous
+            </button>
+            <strong ng-if="$getActiveStep().hasForm" class="fa" ng-class="$getActiveStep().valid ? 'fa-check' : 'fa-times'"></strong>
+
+            <button ng-disabled="$isLast() || ($getActiveStep().hasForm && !$getActiveStep().valid)" class="btn btn-default" ng-click="$nextStep()">
+                Next
+                <span class="fa fa-chevron-right"></span>
+            </button>
+        </header>
+
+        <main step-container></main>
+    </multi-step-container>
+  </div>
+
+  <div class="row row-bottom">
+    <div class="col-xs-12 text-center">
+    <h6>&copy;&nbsp;2016&nbsp;<a target="_blank" href="http://monarchinitiative.org">Monarch Initiative</a></h6>
+    </div>
+  </div>
+
+</div>

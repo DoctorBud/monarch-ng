@@ -1,0 +1,18 @@
+<div class="well">
+    <h3>Using scope inheritance</h3>
+
+    <p>
+        By default, step scopes inherit from their parent scope. In our example, we have defined in our parent scope (the view scope)
+        a <strong>model object</strong>. That model object is used directly by the ngModel directive of the form element below:
+    </p>
+
+    <form name="MyForm" class="form-horizontal" form-step-validity>
+        <div class="form-group">
+            <label class="control-label col-sm-3">First name:</label>
+
+            <div class="col-sm-7">
+                <input type="text" ng-model="formmultistep.model.firstName" name="firstName" class="form-control" placeholder="Enter your first name">
+            </div>
+        </div>
+    </form>
+<div>
