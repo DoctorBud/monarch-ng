@@ -19,7 +19,7 @@ webphenoteModule.controller('IsolatedStepCtrl', IsolatedStepCtrl);
 webphenoteModule.controller('FormMultiStepController', FormMultiStepController);
 
 export default {
-	WebPhenoteController: WebPhenoteController,
-	FormFormlyController: FormFormlyController,
-	FormMultiStepController: FormMultiStepController
+  WebPhenoteController: WebPhenoteController,
+  FormFormlyController: FormFormlyController,
+  FormMultiStepController: FormMultiStepController
 };

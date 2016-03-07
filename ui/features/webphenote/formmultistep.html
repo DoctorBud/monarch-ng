@@ -12,8 +12,11 @@
         </button>
 
         <strong ng-if="$getActiveStep().hasForm" class="fa" ng-class="$getActiveStep().valid ? 'fa-check' : 'fa-times'"></strong>
-
-        <strong ng-bind-template="Your name is {{formmultistep.model.firstName}} {{formmultistep.model.lastName}}"></strong>
+          <h6>Domain {{formmultistep.domain.title}}</h6>
+          <h6>Disease {{formmultistep.disease}}</h6>
+          <h6>Phenotype {{formmultistep.phenotype}}</h6>
+          <h6>Onset {{formmultistep.onset}}</h6>
+        </strong>
 
         <button ng-disabled="$isLast() || ($getActiveStep().hasForm && !$getActiveStep().valid)" class="btn btn-default" ng-click="$nextStep()">
             Next

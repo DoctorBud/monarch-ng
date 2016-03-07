@@ -14,7 +14,6 @@ import 'angular-fontawesome';
 import 'font-awesome/css/font-awesome.min.css';
 
 import routing from './app.config';
-import falcor from './features/falcor';
 import scigraph from './features/scigraph';
 import landing from './features/landing';
 import webphenoteModule from './features/webphenote';
@@ -38,7 +37,7 @@ global.d3 = d3;
             [nguirouter, ngsanitize, nguibootstrap, nganimate,
             'picardy.fontawesome',
             jsonformatter, scroll, ngfileselect, multiStepForm.name,
-            landing, falcor, scigraph,
+            landing, scigraph,
             'app.webphenote',
             // webphenoteModule.FormMultiStepController,
             // webphenoteModule.FormFormlyController,

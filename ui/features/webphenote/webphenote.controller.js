@@ -11,14 +11,14 @@ export default class WebPhenoteController {
     this.domains = [
       {
         title: 'Disease-Phenotype-Onset',
-        href: 'formmultistep',  // disease-phenotype-onset',
+        href: 'disease-phenotype-multi-step',
         description:
           `Associate a disease with its phenotypes and the evidence that supports the
           claim.`
       },
       {
         title: 'Disease-Metabolomic',
-        href: 'formmultistep',  // disease-metabolomic',
+        href: 'disease-metabolomic-multi-step',
         description:
           `Associate a disease with its metabolomic signature and the evidence that supports the
           claim.`

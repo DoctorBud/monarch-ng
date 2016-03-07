@@ -4,7 +4,7 @@ describe('Controller: WebPhenoteModule.WebPhenoteController', function() {
   let $controller;
   let scope;
 
-  beforeEach(angular.mock.module(WebPhenoteModule.WebPhenoteController));
+  beforeEach(angular.mock.module('app.webphenote'));
 
   beforeEach(angular.mock.inject(function($rootScope, _$controller_) {
     $controller = _$controller_;

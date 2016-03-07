@@ -12,9 +12,14 @@ export default class FormMultiStepController {
     this.name = 'formmultistep';
     this.$http = $http;
     this.client = null;
-    this.model = {foo: 'foo'};
-    console.log('this:', this);
-    console.log('$scope:', $scope);
+    this.model = {
+        domain: 'NODOMAIN',
+        title: 'NOTITLE',
+        phenotype: 'NOPHENOTYPE',
+        onset: 'NOONSET',
+        evidence: 'NOEVIDENCE'
+    };
+
     this.steps = [
         {
             templateUrl: step1TemplateUrl,
@@ -39,37 +44,6 @@ export default class FormMultiStepController {
         }
     ];
 
-
-    // this.steps = [
-    //     {
-    //         template: 'Hello <button class="btn btn-default" ng-click="$nextStep()">Next</button>'
-    //     },
-    //     {
-    //         template: 'World <button class="btn btn-default" ng-click="$previousStep()">Previous</button>'
-    //     }
-    // ];
-
-
-    this.templateSteps = [
-      {
-          templateUrl: step1TemplateUrl,
-          title: 'Introduction'
-      },
-      {
-          templateUrl: step2TemplateUrl,
-          hasForm: true,
-          title: 'Update validity'
-      },
-      {
-          templateUrl: step3TemplateUrl,
-          hasForm: true,
-          title: 'Automatically update validity'
-      },
-      {
-          templateUrl: step4TemplateUrl,
-          title: 'Congratulations'
-      }
-    ];
 
   }
 }

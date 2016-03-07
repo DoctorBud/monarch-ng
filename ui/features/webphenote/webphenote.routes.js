@@ -16,6 +16,18 @@ export default function routes($stateProvider) {
       controller: 'FormMultiStepController',
       controllerAs: 'formmultistep'
     })
+    .state('disease-phenotype-multi-step', {
+      url: '/disease-phenotype-multi-step',
+      templateUrl: formmultistepTpl,
+      controller: 'FormMultiStepController',
+      controllerAs: 'formmultistep'
+    })
+    .state('disease-metabolomic-multi-step', {
+      url: '/disease-metabolomic-multi-step',
+      templateUrl: formmultistepTpl,
+      controller: 'FormMultiStepController',
+      controllerAs: 'formmultistep'
+    })
     .state('formformly', {
       url: '/formformly',
       templateUrl: formformlyTpl,
